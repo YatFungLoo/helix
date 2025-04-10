@@ -1,0 +1,36 @@
+theme = "modus_operandi"
+
+[editor]
+line-number = "relative"
+mouse = true
+true-color = true
+color-modes = true
+bufferline = "always"
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+# insert = "bar"
+# normal = "block"
+# select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal."]"]
+"]" = "goto_next_paragraph"
+
+[keys.normal."["]
+"[" = "goto_prev_paragraph"
+
+[keys.normal]
+
+[keys.insert]
+j = { j = "normal_mode" } # Maps `jj` to exit insert mode
+C-p = "move_line_up"
+C-n = "move_line_down"
+C-e = "goto_line_end_newline"
+C-a = "goto_line_start"
+C-f = "move_char_right"
+C-b = "move_char_left"
