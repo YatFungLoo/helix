@@ -1,28 +1,21 @@
-theme = "modus_operandi"
+theme = "base16_default_dark"
 
 [editor]
-line-number = "relative"
+# line-number = "relative"
 mouse = true
 true-color = true
 color-modes = true
 bufferline = "always"
+auto-pairs = false # defaults to `true`
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
 
 [editor.lsp]
 display-messages = true
 
-[editor.cursor-shape]
-# insert = "bar"
-# normal = "block"
-# select = "underline"
-
 [editor.file-picker]
 hidden = false
-
-[keys.normal."]"]
-"]" = "goto_next_paragraph"
-
-[keys.normal."["]
-"[" = "goto_prev_paragraph"
 
 [keys.normal]
 "S-A-f" = ":fmt"
@@ -37,3 +30,9 @@ C-e = "goto_line_end_newline"
 C-a = "goto_line_start"
 C-f = "move_char_right"
 C-b = "move_char_left"
+
+[keys.normal."]"]
+"]" = "goto_next_paragraph"
+[keys.normal."["]
+"[" = "goto_prev_paragraph"
+
